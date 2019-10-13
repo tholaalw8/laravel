@@ -14,7 +14,11 @@
                         </div>
                     @endif
                         <div class="panel-body">
-                    You are logged in! hi
+                     @guest
+                         You are not logged in ! please <a href="/login">login</a>
+                            @else
+                    You are logged in!
+                         @endguest
                         </div>
 
 
