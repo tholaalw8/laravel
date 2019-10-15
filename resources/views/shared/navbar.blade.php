@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav">
             {{-- adding system menu--}}
                 <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
-{{--                <li><a href="#">Customer</a></li>--}}
+                <li><a href="/blog">Blog</a></li>
 {{--                <li><a href="#">Show</a></li>--}}
 {{--                <li><a href="#">Booking</a></li>--}}
 
