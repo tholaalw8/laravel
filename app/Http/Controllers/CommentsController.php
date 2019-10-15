@@ -18,11 +18,12 @@ class CommentsController extends Controller
     public function newComment(CommentFormRequest $request){
 
         $comment = new Comment(array(
-            'post_id' => 23,
+            'post_id' => $request->get('post_id'),
             'content' => $request->get('content'),
-            'user_id' => "1",
+            'user_id' => auth()->user()->getAuthIdentifier(),
+            'post_type' => $request->get('post_type'),
         ));
-        $comment->save();
+       $comment->save();
         return redirect()->back()->with('status', 'Your comment has been created!');
 
 

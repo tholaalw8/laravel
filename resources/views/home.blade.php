@@ -18,6 +18,7 @@
                          You are not logged in ! please <a href="/login">login</a>
                             @else
                     You are logged in!
+                                <br><br> <h4> {!! trans('main.welcome') !!} </h4>
                          @endguest
                         </div>
 
